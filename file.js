@@ -3,14 +3,14 @@ const brandSelect = document.getElementById("brand");
     const searchBtn = document.getElementById("searchBtn");
     const resultDiv = document.getElementById("result");
 
-    // Models Data
+    
     const models = {
       Samsung: ["Galaxy S23", "Galaxy A54", "Galaxy Z Fold 5"],
       Apple: ["iPhone 14", "iPhone 14 Pro", "iPhone SE"],
       Xiaomi: ["Redmi Note 12", "Mi 11 Lite", "Poco X5"]
     };
 
-    // Brand Change → Load Models
+    
     brandSelect.addEventListener("change", function () {
       const brand = this.value;
       modelSelect.innerHTML = `<option value="">-- Choose Model --</option>`;
